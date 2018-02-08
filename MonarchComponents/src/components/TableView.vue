@@ -71,10 +71,6 @@
             element.publications.forEach(function (data) {
               refs.push(`<a href='http://www.ncbi.nlm.nih.gov/pubmed/${data.id}'>${data.id}</a>`);
             });
-            element.provided_by.forEach(function (data) {
-              console.log(data);
-
-            });
             const annoType = _this.mapPrefixes(element.object.id, element.object.label);
             _this.rows.push({
               annoType: annoType,
